@@ -6,7 +6,7 @@ var io = require('socket.io')(server);
 app.use(express.static('public'));
 
 app.get('/hello', function(req, res)  {
-    res.status(200).send('Hello World!')
+    res.status(200).send('Hola Mundo!')
 });
 
 io.on('connection', function(socket) {
