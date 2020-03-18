@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chat Node</title>
+    <link rel="stylesheet" href="style.css">
     <script src="/socket.io/socket.io.js"></script>
     <script src="main.js"></script>
 </head>
 <body>
-    <h1>Mi Aplicacion</h1>
+    <h1>Rubeneitor's chat</h1>
     <div id="messages"></div>
+
+<br>
+
+    <form onsubmit="return addMessage(this);">
+        <input type="text" id="username" placeholder="Tu nombre">
+        <input type="text" id="texto" placeholder="¿Que pasa compañero?...">
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
